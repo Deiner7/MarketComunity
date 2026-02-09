@@ -1,0 +1,13 @@
+/* Catálogo - ajustes específicos */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.action-card {
+  width: 250px; /* tamaño uniforme para las cards */
+}

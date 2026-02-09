@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segunda Mano - Inicio</title>
+
+  <!-- =============================
+       CSS GLOBAL
+       Contiene estilos base, layout y componentes
+  ============================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- =============================
+       CSS PÁGINA
+       Estilos específicos para la página de inicio
+  ============================== -->
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+
+  <!-- =============================
+       HEADER
+       Contiene logo y menú de navegación principal
+  ============================== -->
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">Segunda Mano</a>
+    </div>
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li><a href="pages/catalogo.html">Catálogo</a></li>
+        <li><a href="pages/donar.html">Donar</a></li>
+        <li><a href="pages/vender.html">Vender</a></li>
+        <li><a href="pages/nosotros.html">Nosotros</a></li>
+        <!-- Botón para abrir el modal de login -->
+        <li><button id="loginBtn" class="login-header-button">Iniciar sesión</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =============================
+       MAIN
+       Contenido principal de la página
+  ============================== -->
+  <main class="main">
+
+    <!-- =============================
+         HERO
+         Banner principal con mensaje y descripción
+    ============================== -->
+    <section class="home-hero">
+      <h1>Ropa de segunda mano, nuevas oportunidades</h1>
+      <p>Compra, vende o dona ropa y ayuda al consumo responsable.</p>
+    </section>
+
+    <!-- =============================
+         SELECCIÓN DE CATEGORÍA
+         Botones para filtrar productos por categoría
+    ============================== -->
+    <section class="category-filter">
+      <h2>Explora por categoría</h2>
+      <div class="categories">
+        <button class="category-button">Hombres</button>
+        <button class="category-button">Mujeres</button>
+        <button class="category-button">Niños</button>
+        <button class="category-button">Accesorios</button>
+      </div>
+    </section>
+
+    <!-- =============================
+         ACCIONES PRINCIPALES
+         Sección con tarjetas para Comprar, Vender y Donar
+    ============================== -->
+    <section class="home-actions">
+      <article class="action-card">
+        <h2>Comprar</h2>
+        <p>Encuentra ropa única a buen precio.</p>
+        <a href="pages/catalogo.html" class="button">Ver catálogo</a>
+      </article>
+
+      <article class="action-card">
+        <h2>Vender</h2>
+        <p>Dale una segunda vida a tu ropa.</p>
+        <a href="pages/vender.html" class="button">Vender ropa</a>
+      </article>
+
+      <article class="action-card">
+        <h2>Donar</h2>
+        <p>Ayuda a quien más lo necesita.</p>
+        <a href="pages/donar.html" class="button">Donar ropa</a>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- =============================
+       FOOTER PROFESIONAL
+       Redes sociales, FAQ y derechos de autor
+  ============================== -->
+  <footer class="footer">
+
+    <!-- Redes sociales (solo íconos) -->
+    <section class="footer-social">
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Facebook">
+          <img src="img/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#" target="_blank" aria-label="Instagram">
+          <img src="img/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" target="_blank" aria-label="Twitter">
+          <img src="img/twitter.svg" alt="Twitter">
+        </a>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes (FAQ) -->
+    <section class="footer-faq">
+      <h3>Preguntas frecuentes</h3>
+      <ul>
+        <li><a href="#">¿Cómo puedo comprar ropa?</a></li>
+        <li><a href="#">¿Cómo vender mi ropa?</a></li>
+        <li><a href="#">¿Dónde donar ropa?</a></li>
+        <li><a href="#">Política de devoluciones</a></li>
+      </ul>
+    </section>
+
+    <!-- Derechos de autor -->
+    <p>&copy; 2026 - Proyecto Ropa de Segunda Mano</p>
+
+  </footer>
+
+  <!-- =============================
+       MODAL DE LOGIN
+       Contiene el formulario de inicio de sesión
+       Se abre al hacer clic en "Iniciar sesión" en el header
+  ============================== -->
+  <div id="loginModal" class="login-modal">
+    <div class="login-modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Inicia sesión</h2>
+      <form class="login-form">
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="password" placeholder="Contraseña" required>
+        <div class="login-buttons">
+          <input type="submit" value="Iniciar sesión">
+          <button type="button" class="register-button">Registrarse</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =============================
+       JS PRINCIPAL
+       Controla la apertura y cierre del modal de login
+  ============================== -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

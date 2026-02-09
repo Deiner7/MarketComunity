@@ -1,0 +1,6 @@
+/* Donar - ajustes específicos */
+
+.donation-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}

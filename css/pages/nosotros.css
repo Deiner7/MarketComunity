@@ -1,0 +1,29 @@
+/* =========================
+   NOSOTROS - estilos específicos
+========================= */
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.action-card {
+  width: 200px; /* tamaño uniforme para los miembros del equipo */
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.action-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.action-card p {
+  font-size: 0.95rem;
+  color: var(--color-gray);
+}

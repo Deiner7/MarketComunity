@@ -1,0 +1,48 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES GLOBALES
+========================= */
+
+:root {
+  --color-primary: #2f855a;
+  --color-secondary: #68d391;
+  --color-dark: #1a202c;
+  --color-light: #f7fafc;
+  --color-gray: #718096;
+
+  --font-main: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
